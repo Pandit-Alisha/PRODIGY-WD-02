@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Fun Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch & Fun Game</h1>
+        <p id="surpriseText">Welcome! Let's make your day beautiful!</p>
+        <div class="stopwatch">
+            <div id="display">00:00:00.00</div>
+            <div class="buttons">
+                <button id="startStopBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+                <button id="lapBtn">Lap</button>
+            </div>
+        </div>
+        <div class="laps">
+            <h2>Lap Times</h2>
+            <ul id="lapsList"></ul>
+        </div>
+        <div class="game">
+            <h2>Quick Reaction Game</h2>
+            <button id="gameBtn">Start Game</button>
+            <p id="gameStatus"></p>
+        </div>
+        <button id="aboutBtn">About</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupTitle"></span>
+            <p id="popupMessage"></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
